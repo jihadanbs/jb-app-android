@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- TextView Welcome Message -->
+        <TextView
+            android:id="@+id/account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to your account!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!-- Tombol Kembali -->
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/back_button_desc"
+                android:padding="2dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <!-- Judul Edit Profile -->
+            <TextView
+                android:id="@+id/edit_profile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Edit Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- TextView Profil -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Kolom Bio -->
+        <EditText
+            android:id="@+id/edit_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bio"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Kolom Username -->
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Kolom Display Name -->
+        <EditText
+            android:id="@+id/edit_display_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Display Name"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Kolom Email -->
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:layout_marginBottom="12dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Kolom Password -->
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:layout_marginBottom="24dp"
+            android:inputType="textPassword" />
+
+        <!-- Tombol Save -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Kontak Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Kontak Horizontal Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <!-- Call Us -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"> <!-- Menambahkan margin untuk pemisah antar ikon -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_call" /> <!-- Ganti dengan ikon call Anda -->
+
+                <TextView
+                    android:id="@+id/call_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call Us"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Website -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"> <!-- Menambahkan margin untuk pemisah antar ikon -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_website" /> <!-- Ganti dengan ikon website Anda -->
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Website"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Maps -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"> <!-- Menambahkan margin untuk pemisah antar ikon -->
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_maps" /> <!-- Ganti dengan ikon maps Anda -->
+
+                <TextView
+                    android:id="@+id/maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maps"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

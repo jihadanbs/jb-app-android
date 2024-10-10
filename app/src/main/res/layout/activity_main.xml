@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/logo_desc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_by_me_2" />
+</LinearLayout>

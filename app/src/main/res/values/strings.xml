@@ -1,0 +1,6 @@
+<resources>
+    <!-- String lainnya -->
+    <string name="app_name">JB</string>
+    <string name="logo_desc">Logo JB yang menarik dan modern</string>
+    <string name="back_button_desc">Back to previous screen</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/landing_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Gambar latar belakang -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/landing_screen" />
+
+    <!-- Layout untuk menimpa tombol di atas gambar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tombol Log In dan Sign Up -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Tombol Log In -->
+            <Button
+                android:id="@+id/btn_log_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF41a7"
+                android:padding="16dp"
+                android:text="Log In"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- Tombol Sign Up -->
+            <Button
+                android:id="@+id/btn_sign_up"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:padding="16dp"
+                android:text="Sign Up"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

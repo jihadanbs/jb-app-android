@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Tombol Kembali -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back_button_desc"
+            android:padding="2dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <!-- Judul Log In -->
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_by_me_2"
+            android:layout_alignParentStart="true"/>
+
+        <!-- Teks Log in to JB -->
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in to JB"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:layout_toEndOf="@id/logo"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"/>
+    </RelativeLayout>
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:drawableTint="#FFFFFF"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableEnd="@drawable/ic_eye_closed"
+        android:drawablePadding="10dp"
+        android:drawableTint="#FFFFFF"/>
+
+    <!-- Link Trouble loggin in -->
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trouble loggin in?"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="left"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#00FFFFFF"
+        android:backgroundTintMode="screen"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="12dp"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- Subtitle atau Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Welcome back, let's get started!"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light" />
+</LinearLayout>
